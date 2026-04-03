@@ -4,10 +4,11 @@ Algorithmic Explorers is a React + TypeScript frontend project built with Vite a
 
 ## Project Structure
 
-- `frontend/` - main application source
-- `frontend/src/pages/` - page-level screens such as `HomePage`, `GuruCircle`, and `LearningCohort`
-- `frontend/src/components/` - shared UI components such as `Navbar` and `Footer`
-- `frontend/src/index.css` - global styles and Tailwind-related styling
+- `frontend/` - React + TypeScript application
+  - `frontend/src/pages/` - page-level screens such as `HomePage`, `GuruCircle`, and `LearningCohort`
+  - `frontend/src/components/` - shared UI components such as `Navbar` and `Footer`
+  - `frontend/src/index.css` - global styles and Tailwind-related styling
+- `backend/` - API server and database services (coming soon)
 
 ## Design Reference
 
@@ -15,13 +16,19 @@ Figma file: [ALGORITHMIC EXPLORERS WEBSITE](https://www.figma.com/design/DyTuPXc
 
 ## How To Run
 
-This workspace currently contains the frontend app in the `frontend/` folder.
+### Frontend
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+
+The frontend will be available at `http://localhost:5173`.
+
+### Backend
+
+Backend setup instructions will be added once the backend folder is initialized.
 
 ## Useful Scripts
 
@@ -69,4 +76,4 @@ Use this section as the working guide for anyone contributing to the project.
 ## Notes
 
 - The app entry flow is `src/main.tsx` -> `src/App.tsx` -> `src/pages/HomePage.tsx`.
-- There is currently no separate backend in this workspace.
+- Backend integration is in progress.

@@ -48,3 +48,10 @@ Figma file: [ALGORITHMIC EXPLORERS WEBSITE](https://www.figma.com/design/DyTuPXc
 
 - Keep UI components focused on presentation.
 - Keep page files thin and move reusable behavior into hooks or shared utilities.
+
+## Contributing
+
+- Read the root [README.md](../README.md) before making changes so the workspace setup and contributor expectations stay aligned.
+- Keep UI changes tied to the Figma reference and avoid introducing unrelated layout changes.
+- Run `npm run lint` and `npm run build` before opening a pull request.
+- Keep reusable UI in `src/components/` and page-specific logic inside `src/pages/`.
