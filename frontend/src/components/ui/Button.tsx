@@ -1,4 +1,4 @@
-export default function Button({text}) {
+export default function Button({ text }: { text: string }) {
   return (
       <button
         className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-xl font-semibold text-white text-sm tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95"
