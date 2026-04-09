@@ -3,13 +3,14 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
-import WhoWeAreSection from "../components/ui/WhoWeAre";
+import WhoWeAreSection from "../../components/ui/WhoWeAre";
 import { Mouse } from "lucide-react";
 import { ArrowDown } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
-import CohortsSection from "../components/ui/CohortsSection";
-import TestimonialSwiper from "../components/ui/TestimonialSwiper";
-import CommunitySection from "../components/ui/CommunitySection";
+import CohortsSection from "../../components/ui/CohortsSection";
+import TestimonialSwiper from "../../components/ui/TestimonialSwiper";
+import CommunitySection from "../../components/ui/CommunitySection";
+import Footer from "../../components/ui/Footer";
 
 const bgPath = "/background.jpg";
 
@@ -344,6 +345,7 @@ const HomePage = () => {
       <TestimonialSwiper />
       {/* Community Section */}
       <CommunitySection />
+      <Footer/>
       </div>
     </>
   );

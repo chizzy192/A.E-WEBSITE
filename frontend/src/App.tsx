@@ -1,5 +1,5 @@
-import Guru from "./pages/Guru"
-import HomePage from "./pages/HomePage"
+import Guru from "./pages/LandingPages/Guru"
+import HomePage from "./pages/LandingPages/HomePage"
 
 function App() {
 

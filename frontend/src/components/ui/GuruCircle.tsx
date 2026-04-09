@@ -70,11 +70,15 @@ export default function GuruCircle() {
     <div
       style={{
         background: "linear-gradient(155deg,#0d0b2e 0%,#080620 55%,#110935 100%)",
-        fontFamily: "'Sora','DM Sans',sans-serif",
+        fontFamily: "inherit",
         color: "white",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        justifyContent: "space-between",
+        minHeight: "100vh",
+        width: "100%",
+        padding: "clamp(24px,4vw,56px) clamp(16px,3vw,32px) 0",
         overflowX: "hidden",
         position: "relative",
       }}
@@ -100,9 +104,10 @@ export default function GuruCircle() {
       <div
         style={{
           position: "relative",
-          width: "min(115vw, 898px)",
+          width: "100%",
+          maxWidth: "90rem",
           aspectRatio: "1 / 1",
-          marginTop: "-2vw",
+          marginTop: "clamp(-1.5rem, -2vw, -0.5rem)",
           flexShrink: 0,
         }}
       >
@@ -253,28 +258,31 @@ export default function GuruCircle() {
             opacity: mounted ? 1 : 0,
           }}
         >
+          <p className="text-white/85 tracking-[0.28em] text-[10px] sm:text-xs md:text-sm font-semibold uppercase mb-1">
+            Learning Community
+          </p>
           <h1
             style={{
-              fontSize: "clamp(1rem,2.5vw,1.7rem)",
+              fontSize: "clamp(1.9rem,4vw,4.2rem)",
               fontWeight: 800,
               lineHeight: 1.2,
               margin: 0,
             }}
           >
-            <span style={{ color: "#c4b5fd" }}>Welcome To The</span>
-            <br />
-            <span style={{ color: "#7c3aed" }}>Guru Circle</span>
+            <span style={{ color: "#c4b5fd" }}>Guru</span>{" "}
+            <span style={{ color: "#7c3aed" }}>Circle</span>
           </h1>
           <p
             style={{
-              fontSize: "clamp(0.58rem,1.15vw,0.8rem)",
-              color: "rgba(200,190,255,0.65)",
+              fontSize: "clamp(0.9rem,1.5vw,1.1rem)",
+              color: "rgba(226,220,255,0.78)",
               lineHeight: 1.6,
               margin: 0,
+              maxWidth: "36rem",
             }}
           >
-            Dive deep in immersive, interactive groups. Expand horizons, engage in
-            discussions, and elevate your learning journey with us.
+            Dive into immersive, interactive groups where Gurus share ideas,
+            build together, and push each other forward.
           </p>
           <button className="px-8 mt-2 py-3"
             style={{
@@ -354,9 +362,9 @@ export default function GuruCircle() {
           justifyContent: "center",
           gap: "clamp(20px,5vw,72px)",
           width: "100%",
-          maxWidth: "min(88vw,760px)",
+          maxWidth: "80rem",
           padding: "0 24px 44px",
-          marginTop: "1vw",
+          marginTop: "clamp(16px,2vw,32px)",
           position: "relative",
           zIndex: 30,
           transition: "opacity 600ms 900ms",
